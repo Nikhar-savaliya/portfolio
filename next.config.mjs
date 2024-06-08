@@ -5,7 +5,11 @@ const nextConfig = {
       {
         hostname: "ansubkhan.com",
       },
+      {
+        hostname: "skillicons.dev",
+      },
     ],
+    dangerouslyAllowSVG: true,
   },
 };
 

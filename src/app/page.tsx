@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import TechStack from "@/components/techStack";
 
 export default function Home() {
   return (
@@ -9,9 +10,15 @@ export default function Home() {
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, delay: 0.15 }}
-      className="max-w-5xl mx-auto my-10"
     >
-      about
+      <p className="text-muted-foreground">
+        I am a programmer and web developer from India, currently pursuing a
+        degree in Computer Engineering. Let's work together to bring your ideas
+        to life and surpass your online objectives.
+      </p>
+
+      
+      <TechStack />
     </motion.div>
   );
 }
