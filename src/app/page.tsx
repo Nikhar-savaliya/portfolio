@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import TechStack from "@/components/techStack";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         to life and surpass your online objectives.
       </p>
 
-      
+      <Experience />
       <TechStack />
     </motion.div>
   );

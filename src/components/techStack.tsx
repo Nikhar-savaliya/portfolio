@@ -16,10 +16,10 @@ const TechStack = () => {
       key={"tech-stack"}
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 300, delay: 0.2 }}
+      transition={{ type: "spring", stiffness: 300, delay: 0.25 }}
     >
       <TooltipProvider delayDuration="50">
-        <h3 className="mt-8 mb-3 pl-1 pb-2 border-b font-semibold text-lg ">
+        <h3 className="mt-8 mb-3 pl-1 pb-2  text-xl font-cursive border-b ">
           Languages
         </h3>
         <div className="flex gap-2">
@@ -30,6 +30,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -44,6 +45,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -58,6 +60,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -72,6 +75,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -86,6 +90,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -100,6 +105,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -114,6 +120,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -123,7 +130,7 @@ const TechStack = () => {
         </div>
 
         {/* FrameWorks */}
-        <h3 className="mt-6 mb-3 pl-1 pb-2 border-b  font-semibold text-lg">
+        <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-cursive border-b">
           Frameworks
         </h3>
         <div className="flex gap-2">
@@ -134,6 +141,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -148,6 +156,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -162,6 +171,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -176,6 +186,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -190,6 +201,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -199,7 +211,7 @@ const TechStack = () => {
         </div>
 
         {/* Databases */}
-        <h3 className="mt-6 mb-3 pl-1 pb-2 border-b  font-semibold text-lg">
+        <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-cursive border-b">
           Databases
         </h3>
         <div className="flex gap-2">
@@ -210,6 +222,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -224,6 +237,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -238,6 +252,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
@@ -252,6 +267,7 @@ const TechStack = () => {
                 height="40"
                 width={"40"}
                 alt="web tools"
+                className="opacity-70 hover:opacity-90"
               />
             </TooltipTrigger>
             <TooltipContent>
