@@ -19,7 +19,13 @@ const Header: React.FC = () => {
     >
       <div className="flex flex-col items-start py-8 border-b">
         <div className="flex items-start gap-4 ">
-          <Image src={logo} alt={"logo image"} className="w-12 h-12 rounded" />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt={"logo image"}
+              className="w-12 h-12 rounded"
+            />
+          </Link>
           <div>
             <p className="text-2xl font-semibold text-primary font-cursive leading-8 tracking-wide">
               Nikhar Savaliya
@@ -31,25 +37,31 @@ const Header: React.FC = () => {
         </div>
         <div className="flex items-center">
           <motion.a
+            href="https://github.com/Nikhar-savaliya"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ y: -2 }}
             transition={{ type: "spring", stiffness: 300 }}
-            href="https://github.com/Nikhar-savaliya"
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Github className="rounded" />
           </motion.a>
           <motion.a
+            href="https://x.com/nikharSavaliya"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ y: -2 }}
             transition={{ type: "spring", stiffness: 300 }}
-            href="https://x.com/nikharSavaliya"
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Twitter className="rounded" />
           </motion.a>
           <motion.a
+            href="https://www.linkedin.com/in/nikharsavaliya"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ y: -2 }}
             transition={{ type: "spring", stiffness: 300 }}
-            href="https://www.linkedin.com/in/nikharsavaliya"
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Linkedin className="rounded" />
