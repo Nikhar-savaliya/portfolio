@@ -14,8 +14,8 @@ export default function Home() {
     >
       <p className="text-muted-foreground">
         I am a programmer and web developer from India, currently pursuing a
-        degree in Computer Engineering. Let's work together to bring your ideas
-        to life and surpass your online objectives.
+        degree in Computer Engineering. Let&apos;s work together to bring your
+        ideas to life and surpass your online objectives.
       </p>
 
       <Experience />
