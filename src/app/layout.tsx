@@ -32,9 +32,9 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
-      <body className={cn(prime.className, sofia.variable, "max-xl:mx-6")}>
+      <body className={cn(prime.className, sofia.variable, "max-xl:px-6")}>
         <Header />
-        <div className="max-w-5xl mx-auto">{children}</div>
+        <div className="max-w-5xl mx-auto mb-6">{children}</div>
       </body>
     </html>
   );

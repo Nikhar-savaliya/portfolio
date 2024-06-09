@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200 }}
-      className="max-w-5xl mx-auto my-10"
+      className="max-w-5xl mx-auto my-6"
     >
       <div className="flex flex-col items-start py-8 border-b">
         <div className="flex items-start gap-4 ">
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
             />
           </Link>
           <div>
-            <p className="text-2xl font-semibold text-primary font-serif leading-8 tracking-wide">
+            <p className="text-2xl font-semibold text-primary font-serif leading-8">
               Nikhar Savaliya
             </p>
             <p className="text-muted-foreground mb-6">
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 200 }}
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Image
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 200 }}
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Image
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ y: -2 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 200 }}
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <Image

@@ -11,7 +11,6 @@ export default function Home() {
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, delay: 0.15 }}
-      
     >
       <p className="text-muted-foreground text-balance">
         I am a programmer and web developer from India, currently pursuing a

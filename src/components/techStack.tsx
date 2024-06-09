@@ -47,10 +47,10 @@ const TechStack = () => {
       key={"tech-stack"}
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 300, delay: 0.25 }}
+      transition={{ type: "spring", stiffness: 200, delay: 0.25 }}
     >
       <TooltipProvider delayDuration={50}>
-        <div className="grid  xl:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 ">
           <div>
             <h3 className="mt-6 mb-3 pl-1 pb-2  text-xl font-serif tracking-tight border-b ">
               Languages

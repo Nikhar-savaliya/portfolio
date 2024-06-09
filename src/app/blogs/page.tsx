@@ -46,9 +46,9 @@ const page = () => {
       key={"project-page"}
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 300, delay: 0.15 }}
+      transition={{ type: "spring", stiffness: 200, delay: 0.15 }}
     >
-      <div className="grid w-full grid-cols-2 gap-6">
+      <div className="grid w-full md:grid-cols-2 gap-6">
         {blogsData.map((project) => (
           <CardItem {...project} key={project.id} hasImg={false} />
         ))}
