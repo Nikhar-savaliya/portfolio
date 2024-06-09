@@ -2,7 +2,7 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/icons/portfolio-logo.svg";
 import Image from "next/image";
 import { Github, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
             />
           </Link>
           <div>
-            <p className="text-2xl font-semibold text-primary font-cursive leading-8 tracking-wide">
+            <p className="text-2xl font-semibold text-primary font-serif leading-8 tracking-wide">
               Nikhar Savaliya
             </p>
             <p className="text-muted-foreground mb-6">

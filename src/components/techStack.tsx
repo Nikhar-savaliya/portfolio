@@ -9,6 +9,37 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import React from "react";
+import { cpp, css, html, java, js, py, ts } from "@/assets/icons/languages";
+import { express, next, node, react } from "@/assets/icons/frameworks";
+import { firebase, mongodb, postgresql } from "@/assets/icons/databases";
+import { git, postman, vscode } from "@/assets/icons/tools";
+
+const languages = [
+  { text: "HTML", icon: html },
+  { text: "CSS", icon: css },
+  { text: "JavaScript", icon: js },
+  { text: "TypeScript", icon: ts },
+  { text: "Java", icon: java },
+  { text: "Python", icon: py },
+  { text: "C++", icon: cpp },
+];
+
+const frameworks = [
+  { text: "React.js", icon: react },
+  { text: "Next.js", icon: next },
+  { text: "Node.js", icon: node },
+  { text: "Express.js", icon: express },
+];
+const databases = [
+  { text: "MongoDB", icon: mongodb },
+  { text: "Firebase", icon: firebase },
+  { text: "Postgresql", icon: postgresql },
+];
+const tools = [
+  { text: "VScode", icon: vscode },
+  { text: "Git", icon: git },
+  { text: "Postman", icon: postman },
+];
 
 const TechStack = () => {
   return (
@@ -18,262 +49,112 @@ const TechStack = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 300, delay: 0.25 }}
     >
-      <TooltipProvider delayDuration="50">
-        <h3 className="mt-8 mb-3 pl-1 pb-2  text-xl font-cursive border-b ">
-          Languages
-        </h3>
-        <div className="flex gap-2">
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=html"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>HTML</p>
-            </TooltipContent>
-          </Tooltip>
+      <TooltipProvider delayDuration={50}>
+        <div className="grid  xl:grid-cols-2 gap-8">
+          <div>
+            <h3 className="mt-6 mb-3 pl-1 pb-2  text-xl font-serif tracking-tight border-b ">
+              Languages
+            </h3>
+            <div className="flex gap-2 flex-wrap">
+              {languages.map((lang) => {
+                return (
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={lang.icon}
+                        height="40"
+                        width={"40"}
+                        alt="web tools"
+                        className="rounded-md border"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{lang.text}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+            </div>
+          </div>
 
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=css"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>CSS</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=js"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>JavaScript</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=ts"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>TypeScript</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=java"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Java</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=py"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Python</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=cpp"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>C++</p>
-            </TooltipContent>
-          </Tooltip>
-        </div>
-
-        {/* FrameWorks */}
-        <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-cursive border-b">
-          Frameworks
-        </h3>
-        <div className="flex gap-2">
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=react"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>React.js</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=next"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Next.js</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=tailwind"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Tailwind CSS</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=nodejs"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Node.js</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=express"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Express.js</p>
-            </TooltipContent>
-          </Tooltip>
-        </div>
-
-        {/* Databases */}
-        <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-cursive border-b">
-          Databases
-        </h3>
-        <div className="flex gap-2">
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=mongo"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>MongoDB</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=firebase"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Firebase</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=appwrite"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Appwrite</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger>
-              <Image
-                src="https://skillicons.dev/icons?i=postgres"
-                height="40"
-                width={"40"}
-                alt="web tools"
-                className="opacity-70 hover:opacity-90"
-              />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Postgres</p>
-            </TooltipContent>
-          </Tooltip>
+          <div>
+            {/* FrameWorks */}
+            <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-serif tracking-tight border-b">
+              Frameworks
+            </h3>
+            <div className="flex gap-2">
+              {frameworks.map((lang) => {
+                return (
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={lang.icon}
+                        height="40"
+                        width={"40"}
+                        alt="web tools"
+                        className="rounded-md border"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{lang.text}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            {/* Databases */}
+            <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-serif tracking-tight border-b">
+              Databases
+            </h3>
+            <div className="flex gap-2">
+              {databases.map((lang) => {
+                return (
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={lang.icon}
+                        height="40"
+                        width={"40"}
+                        alt="web tools"
+                        className="rounded-md border"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{lang.text}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            {/* Tools */}
+            <h3 className="mt-6 mb-3 pl-1 pb-2 text-xl font-serif tracking-tight border-b">
+              Tools
+            </h3>
+            <div className="flex gap-2">
+              {tools.map((lang) => {
+                return (
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <Image
+                        src={lang.icon}
+                        height="40"
+                        width={"40"}
+                        alt="web tools"
+                        className="rounded-md border"
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{lang.text}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </TooltipProvider>
     </motion.div>

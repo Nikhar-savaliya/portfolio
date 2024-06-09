@@ -4,15 +4,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-interface projectItemProps {
+interface cardItemProps {
   id: number;
   name: string;
   description: string;
   link: string;
   image: string;
+  hasImg?: boolean;
 }
 
-const ProjectItem = (project: projectItemProps) => {
+const CardItem = (project: cardItemProps) => {
   return (
     <motion.div
       whileHover={{
@@ -23,18 +24,20 @@ const ProjectItem = (project: projectItemProps) => {
         bounce: 0.7,
       }}
       key={project.id}
-      className="mt-5 text-left hover:border hover:bg-muted/30 p-6 rounded-md"
+      className="text-left border bg-muted/40 p-6 rounded-md"
     >
       <a target="_blank" rel="noopener noreferrer" href={project.link}>
-        <Image
-          src={project.image}
-          width={30}
-          height={30}
-          className="mb-3 rounded-lg border-muted"
-          alt={project.name}
-        />
+        {project.hasImg ?? (
+          <Image
+            src={project.image}
+            width={30}
+            height={30}
+            className="mb-3 rounded-lg border-muted"
+            alt={project.name}
+          />
+        )}
         <div className="mb-1 font-medium text-primary">{project.name}</div>
-        <div className="max-w-[300px] text-sm font-normal text-muted-foreground">
+        <div className="text-sm font-normal text-muted-foreground line-clamp-2 max-w-[400px] text-balance">
           {project.description}
         </div>
       </a>
@@ -42,4 +45,4 @@ const ProjectItem = (project: projectItemProps) => {
   );
 };
 
-export default ProjectItem;
+export default CardItem;

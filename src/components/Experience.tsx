@@ -14,18 +14,13 @@ const Experience = () => {
       transition={{ type: "spring", stiffness: 300, delay: 0.2 }}
       className="mt-16"
     >
-      <p className="text-xl font-cursive mb-4 max-md:text-center ">
+      <p className="text-xl font-serif tracking-tight mb-4">
         Academic and professional Experience
       </p>
       <ul className="relative flex items-center space-x-2 w-fit pr-12 p-6 py-3 bg-card border-l">
-        <li className="w-12 h-12">
+        <li className="text-sm border bg-muted/40 w-[360px] px-6 py-2 rounded">
           <span className="w-3 h-3 bg-muted border absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"></span>
-          <Image src={upworkLogo} alt="upwork logo" className="w-12" />
-        </li>
-        <div className="text-sm p-1">
-          <p className="font-cursive text-base text-card-foreground">
-            Freelance Work
-          </p>
+          <p className="text-base text-card-foreground">Freelance Work</p>
           <p className="text-xs text-muted-foreground">
             <Link
               href="https://www.upwork.com/freelancers/nikhars3"
@@ -36,19 +31,12 @@ const Experience = () => {
             </Link>
           </p>
           <p className="text-xs text-muted-foreground">2022-2023</p>
-        </div>
+        </li>
       </ul>
       <ul className="relative flex items-center space-x-2 w-fit pr-12 p-6 py-3 bg-card border-l">
-        <li className="w-12 h-12">
-          <span className="w-3 h-3 bg-muted border absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"></span>
-          <Image
-            src={scetLogo}
-            alt="collage logo"
-            className="w-12 dark:bg-foreground rounded-full"
-          />
-        </li>
-        <div className="text-sm p-1">
-          <p className="font-cursive text-base text-card-foreground">
+        <li className="text-sm border bg-muted/40 w-[360px] px-6 py-2 rounded">
+          <span className="w-3 h-3 bg-slate-300  border absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"></span>
+          <p className="text-base text-card-foreground">
             B.Tech in Computer Science
           </p>
           <p className="text-xs text-muted-foreground">
@@ -61,7 +49,7 @@ const Experience = () => {
             </Link>
           </p>
           <p className="text-xs text-muted-foreground">2021-2025</p>
-        </div>
+        </li>
       </ul>
     </motion.div>
   );

@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Lobster_Two, Montserrat } from "next/font/google";
+import { Bitter, Raleway } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 
-const sofia = Lobster_Two({
+const sofia = Bitter({
   weight: ["400"],
   subsets: ["latin"],
-  variable: "--cursive",
+  variable: "--serif",
 });
-const prime = Montserrat({
+const prime = Raleway({
   subsets: ["latin"],
-  variable: "--cursive",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +32,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
-      <body className={cn(prime.className, sofia.variable)}>
+      <body className={cn(prime.className, sofia.variable, "max-xl:mx-6")}>
         <Header />
         <div className="max-w-5xl mx-auto">{children}</div>
       </body>
