@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Github, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
 import ButtonShapeTabs from "./Tabs";
+import { github, linkedin, twitter } from "@/assets/icons/socials";
 
 const Header: React.FC = () => {
   return (
@@ -44,7 +45,13 @@ const Header: React.FC = () => {
             transition={{ type: "spring", stiffness: 300 }}
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
-            <Github className="rounded" />
+            <Image
+              src={github}
+              height="24"
+              width={"24"}
+              alt="web tools"
+              className=""
+            />
           </motion.a>
           <motion.a
             href="https://x.com/nikharSavaliya"
@@ -54,7 +61,13 @@ const Header: React.FC = () => {
             transition={{ type: "spring", stiffness: 300 }}
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
-            <Twitter className="rounded" />
+            <Image
+              src={twitter}
+              height="24"
+              width={"24"}
+              alt="web tools"
+              className=""
+            />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/nikharsavaliya"
@@ -64,7 +77,13 @@ const Header: React.FC = () => {
             transition={{ type: "spring", stiffness: 300 }}
             className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
-            <Linkedin className="rounded" />
+            <Image
+              src={linkedin}
+              height="24"
+              width={"24"}
+              alt="web tools"
+              className=""
+            />
           </motion.a>
         </div>
       </div>
