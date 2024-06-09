@@ -1,14 +1,15 @@
 "use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Image from "next/image";
-import { motion } from "framer-motion";
-
-import React from "react";
 import { cpp, css, html, java, js, py, ts } from "@/assets/icons/languages";
 import { express, next, node, react } from "@/assets/icons/frameworks";
 import { firebase, mongodb, postgresql } from "@/assets/icons/databases";
@@ -58,7 +59,7 @@ const TechStack = () => {
             <div className="flex gap-2 flex-wrap">
               {languages.map((lang) => {
                 return (
-                  <Tooltip>
+                  <Tooltip key={lang.text}>
                     <TooltipTrigger>
                       <Image
                         src={lang.icon}
@@ -83,12 +84,12 @@ const TechStack = () => {
               Frameworks
             </h3>
             <div className="flex gap-2">
-              {frameworks.map((lang) => {
+              {frameworks.map((framework) => {
                 return (
-                  <Tooltip>
+                  <Tooltip key={framework.text}>
                     <TooltipTrigger>
                       <Image
-                        src={lang.icon}
+                        src={framework.icon}
                         height="40"
                         width={"40"}
                         alt="web tools"
@@ -96,7 +97,7 @@ const TechStack = () => {
                       />
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>{lang.text}</p>
+                      <p>{framework.text}</p>
                     </TooltipContent>
                   </Tooltip>
                 );
@@ -109,12 +110,12 @@ const TechStack = () => {
               Databases
             </h3>
             <div className="flex gap-2">
-              {databases.map((lang) => {
+              {databases.map((db) => {
                 return (
-                  <Tooltip>
+                  <Tooltip key={db.text}>
                     <TooltipTrigger>
                       <Image
-                        src={lang.icon}
+                        src={db.icon}
                         height="40"
                         width={"40"}
                         alt="web tools"
@@ -122,7 +123,7 @@ const TechStack = () => {
                       />
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>{lang.text}</p>
+                      <p>{db.text}</p>
                     </TooltipContent>
                   </Tooltip>
                 );
@@ -135,12 +136,12 @@ const TechStack = () => {
               Tools
             </h3>
             <div className="flex gap-2">
-              {tools.map((lang) => {
+              {tools.map((tool) => {
                 return (
-                  <Tooltip>
+                  <Tooltip key={tool.text}>
                     <TooltipTrigger>
                       <Image
-                        src={lang.icon}
+                        src={tool.icon}
                         height="40"
                         width={"40"}
                         alt="web tools"
@@ -148,7 +149,7 @@ const TechStack = () => {
                       />
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>{lang.text}</p>
+                      <p>{tool.text}</p>
                     </TooltipContent>
                   </Tooltip>
                 );

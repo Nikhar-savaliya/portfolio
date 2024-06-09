@@ -26,23 +26,24 @@ const ProjectsData = [
     image: elibLogo,
   },
   {
-    id: 2,
+    id: 3,
     name: "HMS",
     description: "A hospital management system with a custom admin panel.",
     link: "https://github.com/Nikhar-savaliya/HospitalManagementSystem",
     image: hmsLogo,
   },
   {
-    id: 3,
+    id: 4,
     name: "portfolio",
     description: "Portfolio website built with Next.js and Tailwind CSS.",
     link: "https://github.com/Nikhar-savaliya/portfolio-website",
     image: portfolioLogo,
   },
   {
-    id: 4,
+    id: 5,
     name: "Uifry",
-    description: "Landing page in Next.js with tailwind CSS",
+    description:
+      "Landing page in Next.js with tailwind CSS, implementing a Figma Design",
     link: "https://github.com/Nikhar-savaliya/Uifry-Landing-Page",
     image: uifryLogo,
   },

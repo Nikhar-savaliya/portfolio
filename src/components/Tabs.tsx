@@ -1,12 +1,13 @@
-import Tab from "./ui/Tab";
-import { Home } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+import Tab from "./ui/Tab";
+import { ContactRound, NotebookText, PanelsTopLeft, User2 } from "lucide-react";
+
 const tabs = [
-  { text: "about", link: "/", icon: Home },
-  { text: "projects", link: "/projects", icon: Home },
-  { text: "blogs", link: "/blogs", icon: Home },
-  { text: "contact", link: "/contact", icon: Home },
+  { text: "about", link: "/", icon: User2 },
+  { text: "projects", link: "/projects", icon: PanelsTopLeft },
+  { text: "blogs", link: "/blogs", icon: NotebookText },
+  { text: "contact", link: "/contact", icon: ContactRound },
 ];
 
 const ButtonShapeTabs = () => {

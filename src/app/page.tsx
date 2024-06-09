@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 import TechStack from "@/components/techStack";
 import Experience from "@/components/Experience";
@@ -7,7 +7,7 @@ import Experience from "@/components/Experience";
 export default function Home() {
   return (
     <motion.div
-      key={"annual"}
+      key={"home"}
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, delay: 0.15 }}

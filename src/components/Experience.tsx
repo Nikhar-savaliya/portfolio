@@ -1,8 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import scetLogo from "@/assets/scet-logo.png";
-import upworkLogo from "@/assets/icons/upwork-roundedsquare-1.svg";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Experience = () => {

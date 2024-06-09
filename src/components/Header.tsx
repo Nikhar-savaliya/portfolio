@@ -1,11 +1,11 @@
 "use client";
-import React from "react";
 
-import { motion } from "framer-motion";
-import logo from "@/assets/icons/portfolio-logo.svg";
+import React from "react";
 import Image from "next/image";
-import { Github, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+import logo from "@/assets/icons/portfolio-logo.svg";
 import ButtonShapeTabs from "./Tabs";
 import { github, linkedin, twitter } from "@/assets/icons/socials";
 

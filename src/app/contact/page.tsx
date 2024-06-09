@@ -1,11 +1,12 @@
 "use client";
 
+import React from "react";
+import Link from "next/link";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import React from "react";
 
 const page = () => {
   return (

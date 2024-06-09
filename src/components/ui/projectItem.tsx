@@ -24,7 +24,7 @@ const CardItem = (project: cardItemProps) => {
         bounce: 0.7,
       }}
       key={project.id}
-      className="text-left border bg-muted/40 p-6 rounded-md"
+      className="text-left border bg-muted/40 p-4 rounded-md"
     >
       <a target="_blank" rel="noopener noreferrer" href={project.link}>
         {project.hasImg ?? (
@@ -37,7 +37,7 @@ const CardItem = (project: cardItemProps) => {
           />
         )}
         <div className="mb-1 font-medium text-primary">{project.name}</div>
-        <div className="text-sm font-normal text-muted-foreground line-clamp-2 max-w-[400px] text-balance">
+        <div className="text-sm font-normal text-muted-foreground line-clamp-2 max-w-[400px]">
           {project.description}
         </div>
       </a>

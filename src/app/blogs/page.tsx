@@ -1,7 +1,9 @@
 "use client";
-import CardItem from "@/components/ui/projectItem";
+
 import React from "react";
 import { motion } from "framer-motion";
+
+import CardItem from "@/components/ui/projectItem";
 import { js } from "@/assets/icons/languages";
 
 const blogsData = [
@@ -23,7 +25,7 @@ const blogsData = [
     image: js,
   },
   {
-    id: 2,
+    id: 3,
     name: "JavaScript Type Mutability and Type Conversion — JS02",
     description:
       "There are 2 Data Types in JavaScript. primitive types are immutable, which means that once the primitive value is created it can not be modified or altered directly.",
@@ -31,7 +33,7 @@ const blogsData = [
     image: js,
   },
   {
-    id: 3,
+    id: 4,
     link: "https://medium.com/@nikhar-dev/this-is-all-you-need-to-know-about-strings-in-javascript-ed9c6c7e3786",
     name: "This is all you need to know about Strings in JavaScript",
     description:

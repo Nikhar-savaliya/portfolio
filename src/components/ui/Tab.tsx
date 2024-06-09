@@ -21,7 +21,9 @@ const Tab = (props: TabProps) => {
           : "text-muted-foreground hover:text-primary"
       } relative rounded-md px-2 py-1 text-sm font-medium transition-colors`}
     >
-      <span className="relative z-10">{text}</span>
+      <span className="relative z-10 flex items-center gap-1.5">
+        <props.icon width={16} /> {text}
+      </span>
       {selected && (
         <motion.span
           layoutId="tab"
