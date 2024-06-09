@@ -12,7 +12,7 @@ export default function Home() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, delay: 0.15 }}
     >
-      <p className="text-muted-foreground text-balance">
+      <p className="text-muted-foreground">
         I am a programmer and web developer from India, currently pursuing a
         degree in Computer Engineering. Let's work together to bring your ideas
         to life and surpass your online objectives.

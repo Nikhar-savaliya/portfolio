@@ -18,12 +18,12 @@ const page = () => {
     >
       <Badge
         variant="default"
-        className="flex items-center gap-x-1.5 bg-emerald-800 dark:bg-emerald-300 text-emerald-200 dark:text-emerald-800"
+        className="flex items-center rounded-full gap-x-1.5 bg-emerald-800 text-emerald-200 hover:bg-emerald-800 hover:text-emerald-200"
       >
         <p>Open for full-time jobs or freelance</p>
       </Badge>
 
-      <p className="font-serif tracking-tight text-3xl md:text-4xl max-w-lg text-center text-foreground">
+      <p className="font-serif text-3xl md:text-4xl max-w-xl font-bold text-center text-foreground">
         Feel free to contact me anytime!
       </p>
       <p className="max-w-md text-xs md:text-sm pt-1 pb-6 text-center tracking-wide text-muted-foreground">
