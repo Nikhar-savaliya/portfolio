@@ -3,6 +3,7 @@ import { Bitter, Raleway } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 const sofia = Bitter({
   weight: ["400"],
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={cn(prime.className, sofia.variable, "max-xl:px-6")}>
         <Header />
         <div className="max-w-5xl mx-auto mb-6">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
