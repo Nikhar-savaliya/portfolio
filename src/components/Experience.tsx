@@ -9,7 +9,7 @@ const Experience = () => {
       initial={{ y: -12, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
-      className="mt-16"
+      className="mt-8"
     >
       <p className="text-xl font-serif tracking-tight mb-4">
         Academic and professional Experience

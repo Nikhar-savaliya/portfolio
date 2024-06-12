@@ -22,8 +22,9 @@ const Tab = (props: TabProps) => {
       } relative rounded-md px-2 py-1 text-sm font-medium transition-colors`}
     >
       <span className="relative z-10 flex items-center gap-1.5">
-        <props.icon width={16} /> {text}
+        <props.icon width={16} className="max-[400px]:hidden" /> {text}
       </span>
+
       {selected && (
         <motion.span
           layoutId="tab"

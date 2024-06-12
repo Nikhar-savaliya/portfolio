@@ -26,13 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        />
-      </head>
+      <head></head>
       <body className={cn(prime.className, sofia.variable, "max-xl:px-6")}>
         <Header />
         <div className="max-w-5xl mx-auto mb-6">{children}</div>

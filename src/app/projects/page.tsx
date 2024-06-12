@@ -57,7 +57,7 @@ const page = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, delay: 0.15 }}
     >
-      <div className="grid w-full md:grid-cols-2 gap-6 lg:grid-cols-3">
+      <div className="grid w-full md:grid-cols-2 gap-4 lg:grid-cols-3">
         {ProjectsData.map((project) => (
           <CardItem {...project} key={project.id} />
         ))}

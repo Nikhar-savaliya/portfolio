@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       transition={{ type: "spring", stiffness: 200 }}
       className="max-w-5xl mx-auto my-6"
     >
-      <div className="flex flex-col items-start py-8 border-b">
+      <div className="flex flex-col items-start pt-6 pb-4 border-b">
         <div className="flex items-start gap-4 ">
           <Link href="/">
             <Image
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
             />
           </Link>
           <div>
-            <p className="text-2xl font-semibold text-primary font-serif leading-8">
+            <p className="text-2xl font-semibold text-primary font-serif tracking-wide leading-8">
               Nikhar Savaliya
             </p>
             <p className="text-muted-foreground mb-6">
