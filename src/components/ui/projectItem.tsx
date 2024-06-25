@@ -37,7 +37,7 @@ const CardItem = (project: cardItemProps) => {
           />
         )}
         <div className="mb-1 font-medium text-primary">{project.name}</div>
-        <div className="text-sm font-normal text-muted-foreground line-clamp-2 max-w-[400px]">
+        <div className="text-sm font-normal text-muted-foreground line-clamp-2">
           {project.description}
         </div>
       </a>

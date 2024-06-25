@@ -8,17 +8,25 @@ import elibLogo from "@/assets/icons/Elib-logo.svg";
 import hmsLogo from "@/assets/icons/HMS-logo.svg";
 import portfolioLogo from "@/assets/icons/portfolio-logo.svg";
 import uifryLogo from "@/assets/icons/Uifry-logo.svg";
+import SeverLogo from "@/assets/icons/server-logo.svg";
 
 const ProjectsData = [
   {
     id: 1,
+    name: "Multi-threaded Server in Java",
+    description: "implemented single & multi-threaded servers in java",
+    link: "https://github.com/Nikhar-savaliya/Threaded-servers-in-java",
+    image: SeverLogo,
+  },
+  {
+    id: 2,
     name: "Pearl",
     description: "Mean stack blog website inspired by Medium.com",
     link: "https://github.com/Nikhar-savaliya/Pearl",
     image: pearlLogo,
   },
   {
-    id: 2,
+    id: 3,
     name: "eLib",
     description:
       "A full-stack e-library website that provides users with a beautiful UI.",
@@ -26,21 +34,21 @@ const ProjectsData = [
     image: elibLogo,
   },
   {
-    id: 3,
+    id: 4,
     name: "HMS",
     description: "A hospital management system with a custom admin panel.",
     link: "https://github.com/Nikhar-savaliya/HospitalManagementSystem",
     image: hmsLogo,
   },
   {
-    id: 4,
+    id: 5,
     name: "portfolio",
     description: "Portfolio website built with Next.js and Tailwind CSS.",
-    link: "https://github.com/Nikhar-savaliya/portfolio-website",
+    link: "https://github.com/Nikhar-savaliya/portfolio",
     image: portfolioLogo,
   },
   {
-    id: 5,
+    id: 6,
     name: "Uifry",
     description:
       "Landing page in Next.js with tailwind CSS, implementing a Figma Design",
