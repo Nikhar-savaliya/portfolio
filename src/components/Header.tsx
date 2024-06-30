@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           </Link>
           <div>
             <p className="text-2xl font-semibold text-primary font-serif tracking-wide leading-8">
-              Nikhar Savaliya
+              nikhar savaliya
             </p>
             <p className="text-muted-foreground mb-6">
               web developer & designer

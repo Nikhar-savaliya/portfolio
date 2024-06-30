@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cpp, css, html, java, js, py, ts } from "@/assets/icons/languages";
 import { express, next, node, react } from "@/assets/icons/frameworks";
-import { firebase, mongodb, postgresql } from "@/assets/icons/databases";
+import { firebase, mongodb, mysql } from "@/assets/icons/databases";
 import { git, postman, vscode } from "@/assets/icons/tools";
 
 const languages = [
@@ -34,7 +34,7 @@ const frameworks = [
 const databases = [
   { text: "MongoDB", icon: mongodb },
   { text: "Firebase", icon: firebase },
-  { text: "Postgresql", icon: postgresql },
+  { text: "MySQL", icon: mysql },
 ];
 const tools = [
   { text: "VScode", icon: vscode },

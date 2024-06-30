@@ -8,6 +8,20 @@ import { js } from "@/assets/icons/languages";
 
 const blogsData = [
   {
+    id: 6,
+    name: "Let's dive into the nitty-gritty details of the .git folder!",
+    description:"Not everyone knows how git works under the hood, I was one of them. Then I dived deep to understand Git and this is what I have discovered.",
+    link:"https://medium.com/@nikhar-savaliya/behind-the-push-talking-about-github-7faf348ef36a",
+    image: js,
+  },
+  {
+    id: 5,
+    name: "Behind the Push: Talking about GitHub",
+    description:"If you have been following my last article “Let's dive into the nitty-gritty details of the .git folder!”, we have discussed local Git…",
+    link:"https://medium.com/@nikhar-savaliya/behind-the-push-talking-about-github-7faf348ef36a",
+    image: js,
+  },
+  {
     id: 1,
     name: "JavaScript 'const arr = [ ]' is not an Array!",
     description:
